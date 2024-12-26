@@ -71,8 +71,9 @@ def main():
     # Summarize button
     if st.button("Summarize"):
         if input_text.strip():
-            # Generate summary using the model
-            summary = generate_summary(input_text, model, tokenizer)
+            with st.spinner("Sedang memproses..."):  # Tambahkan spinner di sini
+                # Generate summary using the model
+                summary = generate_summary(input_text, model, tokenizer)
             
             if summary:
                 # Display summary
@@ -127,6 +128,7 @@ def main():
                 st.error("Gagal membuat ringkasan.")
         else:
             st.warning("Masukkan teks untuk diringkas!")
+
 
     # Footer
     st.markdown("<hr>", unsafe_allow_html=True)
