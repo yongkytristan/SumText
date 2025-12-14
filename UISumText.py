@@ -132,8 +132,9 @@ def main():
 
     # Footer
     st.markdown("<hr>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; font-size: 12px;'>© 2024 SumText. All rights reserved. | Privacy Policy | Terms of Service</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 12px;'>© 2025 SumText. All rights reserved. | Privacy Policy | Terms of Service</p>", unsafe_allow_html=True)
 
 # Run the app
 if __name__ == "__main__":
     main()
+
